@@ -97,29 +97,49 @@ public class Polynomial_Evaluator {
 			}
 			else if(choice == 3) {
 				cls();
-				ascend(poly1);
-				ascend(poly2);
-				ascend(polyR);
+				if(poly1 != null) {
+					ascend(poly1);
+				}
+				if(poly2 != null) {
+					ascend(poly2);
+				}
+				if(polyR != null) {
+					ascend(polyR);
+				}
 			}
 			else if(choice == 4) {
 				cls();
-				descend(poly1);
-				descend(poly2);
-				descend(polyR);
+				if(poly1 != null) {
+					descend(poly1);
+				}
+				if(poly2 != null) {
+					descend(poly2);
+				}
+				if(polyR != null) {
+					descend(polyR);
+				}
 			}
 			else if(choice == 5) {
 				cls();
-				condense(poly1);
-				condense(poly2);
-				condense(polyR);
+				if(poly1 != null) {
+					condense(poly1);
+				}
+				if(poly2 != null) {
+					condense(poly2);
+				}
+				if(polyR != null) {
+					condense(polyR);
+				}
 			}
 			else if(choice == 6) {
 				cls();
 				polyR.clear();
-				LinkedList temp1 = poly1.copy();
-				LinkedList temp2 = poly2.copy();
-				temp1 = temp1.joinLinkedLists(temp2);
-				polyR = temp1;
+				if(poly1 != null & poly2 != null) {
+					LinkedList temp1 = poly1.copy();
+					LinkedList temp2 = poly2.copy();
+					temp1 = temp1.joinLinkedLists(temp2);
+					polyR = temp1;
+				}
 			}
 			else if(choice == 7) {
 				cls();
